@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: jh-mybatis
+#server:
+#  port: 11033
+#  contextPath: /v1
+#  display-name: jh-mybatis
+fortress:
+  mybatis:
+    enabled: true
+---
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:mysql://172.17.8.30/ocean?useUnicode=true&characterEncoding=UTF-8
+    username: duiduiche
+    password: DuiDuiChe123
+    driver-class-name: com.mysql.jdbc.Driver
+    max-active: 5
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
