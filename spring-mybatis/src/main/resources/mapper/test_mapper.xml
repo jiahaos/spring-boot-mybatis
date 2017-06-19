@@ -10,4 +10,8 @@
         FROM
             shop_base base
     </select>
+
+    <select id="">
+
+    </select>
 </mapper>
